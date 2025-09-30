@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+# Temu Discord
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A real-time chat application built with React Native, Expo, and TypeScript featuring room-based messaging.
 
-## Get started
+## Features
 
-1. Install dependencies
+### Room Management
+- Create or join chat rooms with custom Room ID (6-9 characters)
+- User name input for identification
+- Form validation with toast notifications
+- Toggle between Create/Join modes
 
-   ```bash
-   npm install
-   ```
+<img src="IMG_4219.PNG" width="300" alt="Create Room Screen">
 
-2. Start the app
+<img src="IMG_4220.PNG" width="300" alt="Join Room Screen">
 
-   ```bash
-   npx expo start
-   ```
+### Chat Interface
+- Real-time message display with user avatars
+- Message bubbles (left-aligned for others, right-aligned for current user)
+- Multi-line text input with auto-expanding height
+- File attachment button
+- Leave room functionality
 
-In the output, you'll find options to open the app in a
+<img src="IMG_4221.png" width="300" alt="Chat Interface">
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Toast Notifications
+- Success and error toast messages
+- Animated fade-in/fade-out effects
+- 5-second auto-dismiss
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<img src="IMG_4222.png" width="300" alt="Toast Notification">
 
-## Get a fresh project
+## Tech Stack
 
-When you're ready, run:
+- React Native
+- Expo
+- TypeScript
+- NativeWind (Tailwind CSS)
+- Expo Router
+- @expo/vector-icons
 
-```bash
-npm run reset-project
-```
+## Components
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- `JoinRoom` - Room creation/joining screen
+- `ChatPage` - Main chat interface
+- `Messages` - Message list display
+- `ToastProvider` - Global toast notifications
 
-## Learn more
+## To Be Implemented
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- WebSocket integration for real-time messaging From: [Backend Repo](https://github.com/woustachemax/temu-discord)
+- Message persistence
+- File attachment functionality
+- Typing indicators
+- Read receipts
